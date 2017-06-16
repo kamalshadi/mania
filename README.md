@@ -24,13 +24,16 @@ There are no hard dependencies other than the Python standard library and numpy.
 
 The package exposes four functions listed below.
 
-* Running mania on a subject probtrackx results:
+* Running mania for a single subject's probtrackx results:
 
 ```
 -> mania_on_subject(study_path, number_of_streamlines_per_seed)
 ```
+> **Note:** <study_path> must point to a subject folder. Inside the subject folder,
+there should be a subfolder called "probtrackx" in which the results of probtrackx
+resides - see the sample_subject folder as an example.
 
-* Calculating confidence of network edges:
+* Calculating the confidence metric for the edges of a subject network:
 ```
 -> conf(study_path)
 ```
@@ -44,9 +47,5 @@ subject_list is the list of study folders. each element of the list is a study f
 ```
 -> synth_probabilistic_anatomy(Number_of_nodes,density,mu1,mu2)
 ```
-
-Note: <study_path> must point to a subject folder. Inside the subject folder,
-there should be a subfolder called "probtrackx" in which the results of probtrackx
-resides - see the sample_subject folder as an example.
 
 
