@@ -5,38 +5,43 @@ Shadi K, Bakhshi S, Gutman DA, Mayberg HS, Dovrolis C. A Symmetry-Based Method t
 
 For technical details, please consult to the paper above. 
 
-----------------------------------------------------------> Usage <--------------------------------------------------------------------
+## Usage 
 
-## Installation
-
+### Installation
+```
 -> pip install mania
+```
 
-## Importing the package in python environment:
+### Importing the package in python environment:
 
+```
 -> import mania
+```
 
-## API:
+### API
 
 The package exposes four functions listed below.
 
 ### Running mania on a subject probtrackx results:
 
+```
 -> mania_on_subject(study_path, number_of_streamlines_per_seed)
+```
 
 ### Calculating confidence of network edges:
-
+```
 -> conf(study_path)
-
+```
 ### Running mania at group level:
-
+```
 -> group_mania(subject_list,output_folder)
-
+```
 subject_list is the list of study folders. each element of the list is a study folder for a subject.
 
 ### Generating synthetic data (see the mania paper):
-
+```
 -> synth_probabilistic_anatomy(Number_of_nodes,density,mu1,mu2)
-
+```
 
 Note: <study_path> must point to a subject folder. Inside the subject folder,
 there should be a subfolder called "probtrackx" in which the results of probtrackx
