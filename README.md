@@ -33,19 +33,27 @@ The package exposes four functions listed below.
 there should be a subfolder called "probtrackx" in which the results of probtrackx
 resides - see the sample_subject folder as an example.
 
+The ouput is a binary numpy 2D array saved in a subfolder called "MANIA" with *.net* extension.
+
 * Calculating the confidence metric for the edges of a subject network:
 ```
 -> conf(study_path)
 ```
+The ouput is a float numpy 2D array saved in a subfolder called "MANIA" with *.conf* extension.
+
 * Running mania at group level:
 ```
 -> group_mania(subject_list,output_folder)
 ```
+The ouput is a binary numpy 2D array saved in the output_folder with *agg.net* name.
+
 subject_list is the list of study folders. each element of the list is a study folder for a subject.
 
 * Generating synthetic data (see the mania paper):
 ```
--> synth_probabilistic_anatomy(Number_of_nodes,density,mu1,mu2)
+-> P = synth_probabilistic_anatomy(Number_of_nodes,density,mu1,mu2)
 ```
+The ouput *P* is a float numpy 2D array simulating anatomical probablistic connectome by maximum entropy model.
+
 
 
