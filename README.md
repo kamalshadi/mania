@@ -8,9 +8,11 @@ For technical details, please consult to the paper above.
 ## Usage 
 
 ### Installation
+Install the latest release with
 ```
 -> pip install mania
 ```
+There are no hard dependencies other than the Python standard library and numpy. MANIA runs with Python 2.7.
 
 ### Importing the package in python environment:
 
