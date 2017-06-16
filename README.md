@@ -17,7 +17,7 @@ There are no hard dependencies other than the Python standard library and numpy.
 ### Importing the package in python environment:
 
 ```
--> import mania
+-> import pymania
 ```
 
 ### API
