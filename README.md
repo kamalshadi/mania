@@ -24,7 +24,7 @@ There are no hard dependencies other than the Python standard library and numpy.
 
 The package exposes four functions listed below.
 
-* Running mania for a single subject's probtrackx results:
+* Running mania for a **single subject**'s probtrackx results:
 
 ```
 -> mania_on_subject(study_path, number_of_streamlines_per_seed)
@@ -35,13 +35,13 @@ resides - see the sample_subject folder as an example.
 
 The ouput is a binary numpy 2D array saved in a subfolder called "MANIA" with *.net* extension.
 
-* Calculating the confidence metric for the edges of a subject network:
+* Calculating the **confidence metric** for the edges of a subject network:
 ```
 -> conf(study_path)
 ```
 The ouput is a float numpy 2D array saved in a subfolder called "MANIA" with *.conf* extension.
 
-* Running mania at group level:
+* Running mania at **group level**:
 ```
 -> group_mania(subject_list,output_folder)
 ```
@@ -49,7 +49,7 @@ The ouput is a binary numpy 2D array saved in the output_folder with *agg.net* n
 
 subject_list is the list of study folders. each element of the list is a study folder for a subject.
 
-* Generating synthetic data (see the mania paper):
+* Generating **synthetic** data (see the mania paper):
 ```
 -> P = synth_probabilistic_anatomy(Number_of_nodes,density,mu1,mu2)
 ```
