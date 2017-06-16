@@ -8,7 +8,7 @@ In order to start using the package import the library:
 
 -> import mania
 
-The package exposes three functions.
+The package exposes four functions.
 
 ———————————————————
 
@@ -22,6 +22,13 @@ Calculating confidence of network edges:
 
 -> conf(study_path)
 
+———————————————————
+
+Running mania at group level
+
+-> group_mania(subject_list,output_folder)
+
+subject_list is the list of study folders. each element of the list is a study folder for a subject.
 
 ———————————————————
 

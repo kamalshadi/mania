@@ -50,9 +50,14 @@ def localmin(ar,tol=-1,nei=3):
 	#~ print minInd
 	return minInd
 	
-def finalNet(fp):
-	path_to_out = fp + '/MANIA/'
-	fName = path_to_out + 'raw.res'
+def finalNet(fp, v = 0):
+	if v == 0:
+		path_to_out = fp + '/MANIA/'
+		fName = path_to_out + 'raw.res'
+	else:
+		path_to_out = fp
+		fName = path_to_out + 'agg.res'
+		
 	with open(fName) as f:
 		D=pk.load(f)
 	den=[w[2] for w in D]
@@ -89,11 +94,17 @@ def finalNet(fp):
 		den=D[his][2]
 		Ts=D[his][-1]
 		Vs=1
-	fName = path_to_out + 'mania_binary.net'
+	if v==0:
+		fName = path_to_out + 'mania_binary.net'
+	else:
+		fName = path_to_out + 'agg.net'
 	with open(fName,'w') as f:
 		D=pk.dump(net,f)
 		
-	fName = path_to_out + 'mania_binary.meta'
+	if v==0:
+		fName = path_to_out + 'mania_binary.meta'
+	else:
+		fName = path_to_out + 'agg.meta'
 	with open(fName,'w') as f:
 		tmp = {}
 		tmp['density'] = den
