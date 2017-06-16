@@ -1,3 +1,9 @@
+This python package implements algorithms introduced in the paper:
+
+Shadi K, Bakhshi S, Gutman DA, Mayberg HS, Dovrolis C. A Symmetry-Based Method to Infer Structural Brain Networks from Probabilistic Tractography Data. Frontiers in Neuroinformatics. 2016.
+
+For technical details, please consult to the paper above. 
+
 Usage:
 
 Installation:
