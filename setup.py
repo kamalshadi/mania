@@ -1,9 +1,9 @@
 from setuptools import setup
 
-setup(name='mania',
-      version='0.1.0',
+setup(name='pymania',
+      version='0.1',
       description='MANIA anatomical inference',
-      url='',
+      url='https://github.com/kamalshadi/mania/',
       author='Kamal Shadi',
       author_email='kamal.shadi85@gmail.com',
       license='MIT',

@@ -10,7 +10,7 @@ For technical details, please consult to the paper above.
 ### Installation
 Install the latest release with
 ```
--> pip install mania
+-> pip install pymania
 ```
 There are no hard dependencies other than the Python standard library and numpy. MANIA runs with Python 2.7.
 
